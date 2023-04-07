@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container{
+    max-width: 100%;
+}
+
+.logo-nav{
+    width: 100%;
+    min-height: 100px;
+}
+
+.logo h1{
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    color: #1A73E9;
+    display: inline;
+    padding: 20px;
+    line-height: 100px;
+    font-style: italic;
+    font-weight: 800;
+    margin-left: 10px;
+    box-shadow: 10px 10px 50px purple;
+    transition: 2s;
+}
+
+.logo{
+    float: left;
+}
+
+.nav{
+    float: right;
+}
+
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.nav ul li{
+    display: inline;
+    padding: 20px;
+    line-height: 100px;
+}
+
+.nav ul li a{
+    color: #1A73E9;
+    text-decoration: none;
+    list-style-type: none;
+    border: 1px groove gray;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.nav ul li a:hover{
+    color: ghostwhite;
+    background-color: #1A73E9;
+    transition: 1s;
+    font-weight: bold;
+}
+
+.myself{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.myself img{
+    width: 300px;
+    height: 300px;
+    border: 5px solid #1A73E9;
+    border-radius: 50%;
+    margin: 100px;
+    animation-name: profile;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes profile{
+    0%{
+        border-color: orange;
+        box-shadow: 10px 10px 50px orange;
+    }
+    20%{
+        border-color: red;
+        box-shadow: 10px 10px 50px red;
+    }
+    40%{
+        border-color: purple;
+        box-shadow: 10px 10px 50px purple;
+    }
+    60%{
+        border-color: green;
+        box-shadow: 10px 10px 50px green;
+    }
+    80%{
+        border-color: yellow;
+        box-shadow: 10px 10px 50px yellow;
+    }
+    100%{
+        border-color: brown;
+        box-shadow: 10px 10px 50px brown;
+    }
+
+}
+
+.myself h1{
+    color: #1A73E9;
+    font-weight: bold;
+    margin-top: 250px;
+}
+
+
+
+.myself h1, .myself h3{
+    color: #1A73E9;
+    border-left: 5px solid #1A73E9;
+    padding-left: 10px;
+    visibility: hidden;
+    position: relative;
+    animation-name: header;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes header{
+    0%{
+        top: 0;
+        left: -60px;
+        color: orange;
+        visibility: visible;
+    }
+    10%{
+        top: 0;
+        left: 0;
+        color: red;
+        visibility: visible;
+    }
+    20%{
+        top: 0;
+        left: 0;
+        color: purple;
+        visibility: visible;
+    }
+    30%{
+        top: 0;
+        left: 0;
+        color: green;
+        visibility: visible;
+    }
+    40%{
+        top: 0;
+        left: 0;
+        color:blueviolet;
+        visibility: visible;
+    }
+    50%{
+        top: 0;
+        left: 0;
+        color: yellow;
+        visibility: visible;
+    }
+    60%{
+        top: 0;
+        left: 0;
+        color: aqua;
+        visibility: visible;
+    }
+    70%{
+        top: 0;
+        left: 0;
+        color: gold;
+        visibility: visible;
+    }
+    80%{
+        top: 0;
+        left: 0;
+        color:brown;
+        visibility: visible;
+    }
+    90%{
+        top: 0;
+        left: 0;
+        color:darkgoldenrod;
+        visibility: visible;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        color: #1A73E9;
+        visibility: visible;
+    }
+
+}
+
+.myself img:hover{
+    opacity: 1;
+    transition: 2s;
+}
+
+.about{
+    background-image: url("bg.jpg");
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.about-info{
+    margin: 100px;
+    width: 33%;
+    color: white;
+    border: 1px groove purple;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.about-info:hover{
+    box-shadow: 10px 10px 50px purple;
+}
+
+.about-info h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.side-img img{
+    width: 600px;
+    height: 600px;
+}
+
+.side-img img:hover{
+    border-right: 1px groove red;
+    box-shadow: 10px 10px 50px red;
+}
+
+
+hr{
+    border: 3px groove purple;
+    margin: 15px;
+}
+
+.boxes{
+    width: 100%;
+    height: 100vh;
+    padding: 90px;
+    background-image: url("1076758\ \(1\).jpg");
+}
+
+.box{
+    width: 30%;
+    min-height: 400px;
+    float: left;
+    background-color: transparent;
+    margin: 1%;
+    border: 2px groove #ccc;
+    border-radius: 10px;
+}
+
+.box:hover{
+    background-color: #222;
+    box-shadow: 10px 10px 50px red;
+}
+
+.box h2{
+    color: ghostwhite;
+    text-align: center;
+    margin: 20px;
+}
+
+.link{
+    margin-bottom: 10px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.link a{
+    text-decoration: none;
+    color: ghostwhite;
+    background-color: #1A73E9;
+    padding: 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+.box p{
+    color: ghostwhite;
+    margin: 15px;
+
+}
+
+.link a:hover{
+    background-color: navy;
+    transition: 1s;
+}
+
+/* .box:nth-child(2){
+    margin: 10px 5%;
+} */
+
+.footer{
+    width: 100%;
+    margin-top: 20px;
+    height: 100vh;
+    /* background-color: #222; */
+    background-image: url("dark-water-waves-isolated-black-background-wave-product-design-194733954.jpg");
+}
+
+.contact{
+    width: 45%;
+    margin: 25px;
+    float: left;
+}
+
+.contact h2{
+    color: ghostwhite;
+    text-align: center;
+    margin: 20px;
+}
+
+.contact p{
+    color: ghostwhite;
+    text-align: center;
+    margin: 20px;
+}
+
+.contact nav a{
+    color: ghostwhite;
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px groove gray;
+    border-radius: 20px;
+    padding: 10px;
+    line-height: 50px;
+}
+
+.contact ul{
+    list-style-type: none;
+    text-align:center;
+}
+
+.contact ul li{
+    display: inline;
+    margin: 50px;
+}
+
+.contact:nth-child(2){
+    border-left: 3px solid ghostwhite;
+}
+
+.contact nav ul li a:hover{
+    /* background-color: red; */
+    font-weight: 600;
+    box-shadow: 10px 10px 50px red;
+}
+
+.also p a{
+    color: ghostwhite;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.round{
+    width: 100%;
+    min-height: 30px;
+    align-items: center;
+    margin: 150px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.r{
+    width: 5%;
+    min-height: 60px;
+    border: 5px double #1A73E9;
+    background-color: #ccc;
+    border-radius: 50%;
+    float: left;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.last p{
+    color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    letter-spacing: 20px;
+    font-weight: bold;
+    word-spacing: 5px;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    border: 1px groove solid #222;
+    background-color: #222;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 5px;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+
